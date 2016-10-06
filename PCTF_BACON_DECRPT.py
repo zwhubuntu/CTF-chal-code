@@ -3,7 +3,7 @@ Created on 2016-5-1
 
 @author: wenhuizone
 '''
-intext = "bacoNisoneofaMerICaSsWEethEartSitsAdARlinGSuCCulEntfOoDtHAtPaIRsFlawLE"
+intext = "VoiCIunESUpeRbereCeTtEcONconteepARunGrouPedArtistEsculinaiRedONTleBOnGoutetlESeNsdeLAcLasSenestlimIteEqUeparLEnombreDEcAlOriesqUilsPeUVEntIngurgiterCesvirtuosesdelafriteusevouspresentecepetitclippleindegoutsavoureux"
 outtext = ""
 for c in intext:
     if c.isupper():

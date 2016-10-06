@@ -50,5 +50,5 @@ def decryptRailFence(encrypted, rails, showOff = 0):
     return decoded
 
 #print decryptRailFence("WECRLTEERDSOEEFEAOCAIVDEN", 3, 0); #(reference: http://en.wikipedia.org/wiki/Rail_Fence_Cipher)
-for i in range(0,111):
-    print decryptRailFence("AaY--rpyfneJBeaaX0n-,ZZcs-uXeeSVJ-sh2tioaZ}slrg,-ciE-anfGt.-eCIyss-TzprttFliora{GcouhQIadctm0ltt-FYluuezTyorZ-", i, 0); #(reference: http://i.imgur.com/kWGmM.gif)
+for i in range(0, 200):
+    print decryptRailFence("fdc3_#l{tsf#ahfte}gS:en_hmgcX_poe", i, 0);  # (reference: http://i.imgur.com/kWGmM.gif)

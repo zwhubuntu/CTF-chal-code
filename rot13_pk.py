@@ -9,7 +9,8 @@ def rot13(s, OffSet=13):
         return f(97) if ch.islower() else (f(65) if ch.isupper() else ch)
     return ''.join(encodeCh(c) for c in s)
 
-s='Area,-SharifesriGQttuyapJXZuV2ZgEGC-tocIm-uoYyB0ZXJt},-tITtroa0Fer-fence-is-a.yzFaudlYzZ-na-sesolcn-spl{hctlT-'
+
+s = 'STTKMAHIANINRDNG'
 print rot13(s)              # Uryyb!
 print rot13(rot13(s))       # Hello!
 print rot13(s,26)           # Hello!

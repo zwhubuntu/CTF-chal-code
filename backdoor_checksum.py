@@ -21,7 +21,8 @@ def crc16(data):
     crc=0xFFFF
     for i in range(len(data)):
         x=((crc>>8)^ord(data[i]))&0xFF
-        x^=x>>4
+        x ^= x >> 4
+        a
         crc=((crc<<8)^(x<<12)^(x<<5)^x)&0xFFFF
     return crc
 
