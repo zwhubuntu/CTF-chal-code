@@ -12,8 +12,7 @@ Created on 2016-9-12
   v14 = -17;
 
 '''
-import ctypes
-import string
+import ctypes,string
 
 v9 = [-85, -35, 51, 84, 53, -17]
 for i in xrange(6):
