@@ -145,7 +145,7 @@ print "the key is:%s" %(key)
 mode = AES.MODE_ECB
 enc = AES.new(key, mode)
 ciper = base64.b64encode(enc.encrypt(pad(username)))
-print ciper
+print "the password is %s" %ciper
 
 
 
