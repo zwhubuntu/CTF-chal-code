@@ -13,5 +13,5 @@ output=''
 
 for i in range(0, 2):
     for c in str:
-        output=output+c[i]
+        output += c[i]
 print output

@@ -47,7 +47,7 @@ for i in xrange(len(username)):
     elif i % 3 == 2:
         serial += chr(ord(username[i]) ^ lst[2]).encode('hex')
 
-print "the crack_serial is %s"%(serial)
+print "the crack_serial is %s"%(serial).upper()
 
 crack_serial = [0x5D, 0x4F, 0x7A, 0x25, 0x52, 0x46, 0x21, 0x53]
 for i in xrange(len(crack_serial)):

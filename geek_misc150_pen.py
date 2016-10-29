@@ -1,0 +1,6 @@
+w = open('d:/flag.png', 'wb')
+r = open('d:/pen_and_apple.mp4:flag.png', 'rb')
+strr = r.read()
+w.write(strr)
+w.close()
+r.close()

@@ -11,7 +11,7 @@ c=base64.b64decode('sSNnx1UKbYrA1+MOrdtDTA==')
 key=base64.b64decode('cGhyYWNrICBjdGYgMjAxNg==')
 print len(key)
 mode=AES.MODE_ECB
-dec=AES.new(key,mode)
+dec=AES.new(key, mode)
 print key
 plain=dec.decrypt(c)
 print "flag is:"

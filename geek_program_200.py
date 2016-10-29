@@ -18,7 +18,7 @@ target = re.findall(r'<br/>(.*)', content, re.S)[0]
 #print target
 result = char_count('@', target)
 #print result
-data = {'mytext' : result}
+data = {'mytext': result}
 p = s.post(post_url, data= data)
 print p.text
 

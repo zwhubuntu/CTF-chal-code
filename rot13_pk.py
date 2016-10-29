@@ -10,7 +10,7 @@ def rot13(s, OffSet=13):
     return ''.join(encodeCh(c) for c in s)
 
 
-s = 'STTKMAHIANINRDNG'
+s = 'flua{euMuC_fbnejdemMFAHFefjemubfdJNELDQICufmudf}'
 print rot13(s)              # Uryyb!
 print rot13(rot13(s))       # Hello!
 print rot13(s,26)           # Hello!

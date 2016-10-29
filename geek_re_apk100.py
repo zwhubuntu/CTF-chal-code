@@ -36,4 +36,4 @@ flag = ''
 for i in range(len(table)/2):
     flag += chr(table[2 * i])
 
-print "flag is %s" %(flag[0:28])
+print "flag is %s" % (flag[0:28])
