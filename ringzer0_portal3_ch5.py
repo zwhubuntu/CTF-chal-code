@@ -3,7 +3,7 @@ import requests
 login_url = 'https://ringzer0team.com/login'
 target_url = 'https://ringzer0team.com/challenges/5'
 
-data = {'username': 'zwhubuntu', 'password': 'xiaohui'}
+data = {'username': 'zwhubuntu', 'password': '************************'}
 password = ''
 
 s = requests.session()
