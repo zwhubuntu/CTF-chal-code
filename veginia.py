@@ -1,13 +1,18 @@
 from __future__ import print_function
+
 import itertools
+
 
 def ch63():
 	#p = 'ATTACKATDAWN'
 	#k = 'LEMON'
 	#c = vigenere_encrypt(p, k)
 	#print(c, vigenere_decrypt(c, k))
-	c = 'KDERE2UNX1W1H96GYQNUSQT1KPGB'
-	k = 'fselkladfklklakl'
+    # c = 'Nwh whdjwh qm uepen, T tjb fsmt tixgi jsrsh sigm gs mpzp xwqf iahxpv iw fslkt. pehgpxf{qtextz_glacz_elt_neinrw_qsg_bums_dcp}'
+    # k = 'fselkladfklklakl'
+    # k = 'Frank'
+    c = 'Nvfppp4sntgqsetntgfaulu'
+    k = 'hello'
 	print(c, vigenere_decrypt(c, k))
 
 def vigenere_encrypt(s, key):

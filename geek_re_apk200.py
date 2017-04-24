@@ -108,8 +108,10 @@ for(v0 = 0; v0 < v8.length; ++v0) {
             v3[v1] = v5[(v2[v1] + 7) % v5.length];
         }
 '''
+import base64
+
 from Crypto.Cipher import AES
-import base64, os
+
 encrypt1_str = "ThisIsNotFL@GplzDonnotSubmitThisString#HaveFunWithGeekmastergogo"
 username_handle1 = ''
 v8 = ''
@@ -119,7 +121,6 @@ username_handle = ''
 xor_string = 'o0xmuhe'
 encrypt2_str = "talkischeapshowmethecode$ischeapshowmethe#SycSYC{IamNotFLAG2333}"
 username = '1' * 16
-
 '''
 padding writing
 '''
@@ -132,19 +133,16 @@ for j in username:
 print "first_handle is: %s"%(username_handle)
 for i in xrange(len(username)):
     v8 += encrypt1_str[ord(username_handle[i]) % len(encrypt1_str)]
-#print "v8 is: %s"%(v8)
 for k in xrange(len(v8)):
     v2.append(ord(v8[k]) ^ ord(xor_string[k % 7]))
-#print "v2:"
-#print v2
 for l in xrange(len(v8)):
     v8_handle += encrypt2_str[(v2[l] + 7) % len(encrypt2_str)]
-#print v8_handle
 key = v8_handle[::-1]
 print "the key is:%s" %(key)
 mode = AES.MODE_ECB
 enc = AES.new(key, mode)
 ciper = base64.b64encode(enc.encrypt(pad(username)))
+print "the username is: %s" % username
 print "the password is %s" %ciper
 
 
