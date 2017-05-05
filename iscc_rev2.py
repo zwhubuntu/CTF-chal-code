@@ -10,7 +10,6 @@ for i in lst:
     strr.append(chr(i ^ 0x66))
 print strr
 
-print strr[0:5]
 strr_2[0] = strr[0]
 strr_2[1] = strr[1]
 strr_2[2] = strr[2]
