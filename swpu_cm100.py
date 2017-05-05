@@ -59,3 +59,10 @@ int __thiscall sub_72A8E0(void *this)
   return sub_6FB72A((unsigned int)&savedregs ^ v15, v2);
 }
 '''
+lst1 = [1, 2, 3, 4, 5, 6, 7, 8]
+lst2 = [2, 6, 5, 4, 4, 6, 3, 1]
+flag = []
+
+for i in xrange(len(lst1)):
+    flag.append(lst1[i] ^ lst2[i])
+print flag
