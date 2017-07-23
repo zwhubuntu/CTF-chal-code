@@ -6,7 +6,7 @@ def my_split(str,width):
     return [str[x:x+width] for x in range(0,len(str),width)]
 
 
-string = 'AABAAAAAAABAABBAAAABAAAAAAAABAABBBAABBAB'
+string = 'AAABAABAAAABBAAAABAABAAABABBAAAAAAAABBBBABBBB'
 result=''
 for i in range(0,len(string)):
     result+=chr(ord(string[i])).lower()
