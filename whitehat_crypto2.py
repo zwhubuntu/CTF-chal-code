@@ -1,0 +1,21 @@
+lst1 = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A, 0x00, 0x00, 0x00, 0x0D, 0x49]
+lst2 = [0xDE, 0x63, 0x22, 0x2B, 0x69, 0x3A, 0x74, 0x39, 0x57, 0x33, 0x6c, 0x61, 0x2D]
+
+flag = ''
+
+for i in xrange(len(lst1)):
+    flag += chr(lst1[i] ^ lst2[i])
+print flag
+
+key = 'W3lld0n3'
+
+rd = open('f:/out.png', 'rb')
+wr = open('f:/flagc.png', 'wb')
+
+strr = rd.read()
+write = ''
+for i in xrange(len(strr)):
+    write += chr(ord(strr[i]) ^ ord(key[i % len(key)]))
+wr.write(write)
+rd.close()
+wr.close()

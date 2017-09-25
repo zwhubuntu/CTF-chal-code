@@ -5,7 +5,8 @@ Created on 2016-6-4
 '''
 import base64
 import binascii
-b64str='R2LMDEZVCKJHC2VJC0TLEQ=='
+
+b64str = 'EW91X2FYZV9HX2DVB2RFYM95='
 f=open('d:/flag.txt','w')
 def  base64code(s,d):
     global b64str
